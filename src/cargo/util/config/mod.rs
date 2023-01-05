@@ -1037,6 +1037,10 @@ impl Config {
             }
         }
 
+        // Enable sparse registry and registry auth
+        self.unstable_flags.registry_auth = true;
+        self.unstable_flags.sparse_registry = true;
+
         Ok(())
     }
 
